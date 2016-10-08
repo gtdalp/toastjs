@@ -3,55 +3,52 @@
  * xisa
  * 0.0.1(2014-2016)
  */
- /*
-    底层库使用 Zepto 或者 jQuery
- */
-;(function($){
+;(function(){
     'use strict';
-    // toastjs插件
-    $.fn.toastjs = function (options) {
-        return new ToastJs(this, options);
-    };
-    function ToastJs(element, options) {
-        this.ele = element;
-        // 创建id
-        if (!this.ele.attr('id')) {
-            this.id = 'toastjs' + Math.random().toString().replace('0.', '');
-            this.ele.attr('id', this.id);
+    // toastjs组件
+    window.ToastJs = function (val, time, callback) {
+        var options = {
+            id: 'toastjs',
+            val: val || '',
+            time: time || 3000,
+            callback: callback
         }
-        this.init(options);
+        return new ToastJs(options);
+    }
+    function ToastJs(options) {
+        this.options = options;
+        this.init();
     }
     ToastJs.prototype = {
         version: '0.0.1',
         // 初始化
-        init: function (options) {
-            //
-            //
+        init: function () {
+            this.render();
         },
         // 渲染
         render: function () {
-            //
-            //
-        },
-        // 事件
-        event: function () {
-            //
-            //
+            var op = this.options;
+            window.onload = function () {
+                var toastjs = document.getElementById(op.id);
+                if (!toastjs) {
+                    var body = document.querySelector('body');
+                    var toastjsNode = document.createElement("div");
+                    toastjsNode.innerHTML = op.val;
+                    body.appendChild(toastjsNode);
+                }
+            }
         },
         // 显示
         show: function () {
-            //
-            //
+            this.render();
         },
         // 隐藏
         hide: function () {
-            //
             //
         },
         // 销毁
         destroy: function () {
             //
-            //
         }
     }
-})(window.Zepto || window.jQuery);
+})();
