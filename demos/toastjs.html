@@ -8,10 +8,16 @@
 <title>toastjs弹出提示</title>
 <script src="../build/toastjs.js"></script>
 <link rel="stylesheet" type="text/css" href="../src/css/base.css" />
+<link rel="stylesheet" type="text/css" href="toastjs.css" />
 <script type="text/javascript">
-    ToastJs('gaga')
+    // ToastJs('toastjs弹出提示');
+    // ToastJs('toastjs弹出提示', 2000);
+    ToastJs('toastjs弹出提示', 2000, function() {
+    	console.log('toastjs弹出提示')
+    });
 </script>
 </head>
 <body>
+<div>123123231231</div>
 </body>
 </html>
