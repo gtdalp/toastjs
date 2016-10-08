@@ -147,22 +147,22 @@
             var op = this.options;
             var doc = document;
             op.id = 'toastjs';
-            window.onload = function () {
-                var toastjs = doc.getElementById(op.id);
-                if (!toastjs) {
-                    var body = doc.body;
-                    var div = doc.createElement("div");
-                    div.innerHTML = op.val;
-                    div.id = op.id;
-                    body.appendChild(div);
-                    div.className = 'toastjs';
-                    var width = div.clientWidth/2;
-                    var height = div.clientHeight/2;
-                    div.setAttribute('style', "margin:-" + height + "px 0 0 -" + width + "px;top:50%;");
-                    div.className = 'toastjs toastjs-animate-in';
-                }
-                this.hide();
-            }.bind(this);
+            
+            var toastjs = doc.getElementById(op.id);
+            if (!toastjs) {
+                var body = doc.body;
+                var div = doc.createElement("div");
+                div.innerHTML = op.val;
+                div.id = op.id;
+                body.appendChild(div);
+                div.className = 'toastjs';
+                var width = div.clientWidth/2;
+                var height = div.clientHeight/2;
+                div.setAttribute('style', "margin:-" + height + "px 0 0 -" + width + "px;top:50%;");
+                div.className = 'toastjs toastjs-animate-in';
+            }
+            this.hide();
+                
         },
         // 显示
         show: function () {
