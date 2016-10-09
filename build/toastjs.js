@@ -1,7 +1,7 @@
 /**
  * toastjs
  * xisa
- * 0.0.1(2014-2016)
+ * 0.0.2(2014-2016)
  */
 ;(function(root, factory) {
   if (typeof define === 'function' && define.amd) {
@@ -129,7 +129,7 @@
         this.init();
     }
     Toast.prototype = {
-        version: '0.0.1',
+        version: '0.0.2',
         // 初始化
         init: function () {
             this.render();

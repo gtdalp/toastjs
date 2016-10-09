@@ -37,3 +37,5 @@ toast('toastjs弹出提示', 2000, function(){
 
 });
 ```
+效果图
+![demo.png](demo.png)
