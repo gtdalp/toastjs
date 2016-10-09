@@ -1,9 +1,5 @@
 # toastjs
 
-## DEMO 
-
-http://hapjs.github.io/toastjs/demos/toastjs.html
-
 ## 安装
 
 可以通过npm安装
