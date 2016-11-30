@@ -14,6 +14,17 @@ npm install toastjs
 <script src="build/toastjs.js"></script>
 ```
 
+
+
+效果图
+![qcode.gif](./src/images/qcode.gif)
+![demo.png](./src/images/demo.png)
+###地址：<a href="https://gtdalp.github.io/widget/toastjs/demos/toastjs.html">https://gtdalp.github.io/widget/toastjs/demos/toastjs.html</a>
+
+
+
+
+
 ## 用法 1
 
 ```javascript
@@ -33,5 +44,4 @@ toast('toastjs弹出提示', 2000, function(){
 
 });
 ```
-效果图
-![demo.png](demo.png)
+
