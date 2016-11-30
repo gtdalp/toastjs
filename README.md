@@ -17,10 +17,10 @@ npm install toastjs
 
 
 效果图
-![qcode.gif](./src/images/qcode.gif)
+![qcode.png](./src/images/qcode.png)
 ![demo.png](./src/images/demo.png)
 ###地址：<a href="https://gtdalp.github.io/widget/toastjs/demos/toastjs.html">https://gtdalp.github.io/widget/toastjs/demos/toastjs.html</a>
-
+![demo.gif](./src/images/demo.gif)
 
 
 
